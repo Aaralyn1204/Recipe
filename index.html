@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Book</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Recipe Book</h1>
+    <nav>
+      <a href="#recipe1">Recipe 1</a>
+      <a href="#recipe2">Recipe 2</a>
+      <a href="#recipe3">Recipe 3</a>
+      <a href="#recipe4">Recipe 4</a>
+    </nav>
+  </header>
+
+  <section id="recipes">
+    <h2>Our Delicious Recipes</h2>
+
+    <table>
+      <tr>
+        <th>Recipe Name</th>
+        <th>Ingredients</th>
+        <th>Image</th>
+      </tr>
+
+      <tr id="recipe1">
+        <td>Chocolate Cake</td>
+        <td>Flour, Cocoa, Sugar, Eggs, Milk, Butter</td>
+        <td><img src="https://tse3.mm.bing.net/th?id=OIP.JGLbaaLdpZs3IitAFshC8gHaLH&pid=Api&P=0&h=180" alt="Chocolate Cake" width="100"></td>
+      </tr>
+
+      <tr id="recipe2">
+        <td>Pasta Carbonara</td>
+        <td>Spaghetti, Eggs, Parmesan, Pancetta, Garlic</td>
+        <td><img src="https://tse4.mm.bing.net/th?id=OIP.Y-xXv1fK2Y-jt-ldb20a-gHaEK&pid=Api&P=0&h=180" alt="Pasta Carbonara" width="100"></td>
+      </tr>
+
+      <tr id="recipe3">
+        <td>Apple Pie</td>
+        <td>Apples, Sugar, Cinnamon, Flour, Butter, Pie Crust</td>
+        <td><img src="https://tse3.mm.bing.net/th?id=OIP.q-0VwJ7Mu-NZHxUfLjs3FwHaE1&pid=Api&P=0&h=180" alt="Apple Pie" width="100"></td>
+      </tr>
+
+      <tr id="recipe4">
+        <td>Caesar Salad</td>
+        <td>Lettuce, Croutons, Parmesan, Caesar Dressing</td>
+        <td><img src="https://tse3.mm.bing.net/th?id=OIP.8UagT3WWGxruvIOqJTCPeQHaE8&pid=Api&P=0&h=180" alt="Caesar Salad" width="100"></td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="feedback">
+    <h2>Give Us Your Feedback</h2>
+    <form id="feedbackForm">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="recipe">Which recipe did you try?</label><br>
+      <select id="recipe" name="recipe" required>
+        <option value="Chocolate Cake">Chocolate Cake</option>
+        <option value="Pasta Carbonara">Pasta Carbonara</option>
+        <option value="Apple Pie">Apple Pie</option>
+        <option value="Caesar Salad">Caesar Salad</option>
+      </select><br><br>
+
+      <label for="feedback">Your Feedback:</label><br>
+      <textarea id="feedback" name="feedback" rows="4" required></textarea><br><br>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
